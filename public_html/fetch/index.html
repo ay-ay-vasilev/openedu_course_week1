@@ -11,7 +11,7 @@
     <script>
         async function btClick(){
             let url = document.getElementById('inp').value;
-            let text = await fetch(url).then((response) => text());
+            let text = await fetch(url).then((response) => response.text());
             document.getElementById('inp').value = text;
         }
     </script>
